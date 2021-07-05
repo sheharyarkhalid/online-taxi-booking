@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+
+    <header>
+        <div class="custom_container">
+            <div class="header_bar">
+                <div class="logo">
+                <a href="index.html">Pick Up</a>
+                </div>
+                <button class="nav_btn open_close_nav" type="button">
+                      <i class="fas fa-bars"></i>
+                  </button>
+                <div class="nav_bar">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Career</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="call_us">
+                    <span><i class="fas fa-phone-volume"></i></span>
+                    <small>Call Now:</small>
+                    <a href="#">823</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+<section class="responsive_nav_bar">
+    <div class="cancle_nav"><a class="open_close_nav"><i class="fas fa-times"></i></a></div>
+    <div class="responsive_nav">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Services</a></li>
+            <li><a>Career</a></li>
+            <li><a>Contact us</a></li>
+        </ul>
+    </div>
+    <div class="responsive_call_us">
+        <span><i class="fas fa-phone-volume"></i></span>
+        <small>Call Now:</small>
+        <a href="#">823</a>
+    </div>
+</section>
+
+<section class="banner">
+  <div class="custom_container">
+    <div class="banner_data">
+        <div class="banner_text">
+            <h1>Fast and convenient</h1>
+            <h2>Everywhere, anytime</h2>
+            <h3>Enjoy comfortable trip, order taxi online</h3>
+        </div>
+        <div class="booking_detail">
+            <form>
+                <div class="booking_info">
+                 <div class="booking_fields"> 
+                    <i class="fas fa-map-marker-alt"></i>    
+                <input type="location" placeholder="From:">
+                  </div>
+                  <div class="booking_fields"> 
+                    <i class="fas fa-map-marker-alt"></i>
+                <input type="location" placeholder="To:">
+                  </div>
+                  <div class="booking_fields"> 
+                    <i class="fas fa-phone-volume rotate_icon"></i>
+                <input type="number" placeholder="Phone Number:">
+                  </div>
+                <div class="booking_fields">
+                    <i class="fas fa-clock"></i>
+                   <select>
+                       <option>Timing:</option>
+                   </select>
+                </div>
+                <div class="booking_fields"> 
+                    <i class="fas fa-car"></i>
+                    <select>
+                        <option>Car Type:</option>
+                    </select>
+                 </div>
+                 <div class="booking_fields">
+                    <i class="fas fa-wallet"></i> 
+                    <select>
+                        <option>Payment Method:</option>
+                    </select>
+                 </div>
+                </div>
+                <div class="booking_btn">
+                    <button>Order Taxi Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+<script>
+$('.open_close_nav').click(function(){
+
+$('.responsive_nav_bar').toggleClass('responsive_bar');
+});
+</script>
+
+
+</body>
+</html>
