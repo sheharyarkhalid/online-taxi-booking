@@ -248,6 +248,7 @@ header{
         float: left;
         width: 100%;
         background-attachment: fixed;
+        margin-bottom: 30px;
     }
 .banner_data{
     display: flex;
@@ -359,6 +360,78 @@ padding: 13px 24px;
 cursor: pointer;
 }
 
+.why_book_us{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+}
+.why_book_us h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 27px;
+    color: #45423c;
+    margin-bottom: 30px;
+}
+
+.why_book_us .books_us_detali{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 20px;
+
+}
+.why_book_us .books_us_detali .book_us{
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 16px;
+}
+.why_book_us .books_us_detali .book_us .book_us_specs_section_one{
+display: flex;
+flex-direction: column;
+}
+.why_book_us .books_us_detali .book_us .book_us_specs_section_one span{
+padding: 10px 0px;
+}
+.why_book_us .books_us_detali .book_us .book_us_specs_section_one span i{
+    color: #31b143;
+}
+
+.why_book_us .books_us_detali .book_us .book_us_specs_section_one span small{
+    font-size: 14px;
+    color: #45423c;
+    padding: 0px 10px;
+    font-weight: 400;
+}
+.book_us_specs_section_two{
+/* display:flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+text-align: center; */
+text-align: center;
+display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 20px 15px;
+height: 100%;
+align-content: center;
+}
+.book_us_specs_section_two span h3{
+    font-size: 25px;
+    color: #45423c;
+    margin-bottom: 10px;
+}
+.book_us_specs_section_two span p{
+    font-size: 17px;
+}
+.book_us_specs_section_two span i{
+color: #09afee;
+font-size: 40px;
+margin-bottom: 10px;
+}
+
+
 /*RESPONSIVE*/
 
 /*Tablet*/
@@ -375,6 +448,9 @@ cursor: pointer;
         }
         .header_bar .logo{
             margin-bottom: 10px;
+        }
+        .book_us_specs_section_two{
+            grid-template-columns: auto auto;
         }
 
    
@@ -405,12 +481,25 @@ cursor: pointer;
          
             grid-template-columns: auto;
          }
-    }
+    
+         .why_book_us .books_us_detali {
+          
+            grid-template-columns: auto;
+            
+        }
+        .book_us_specs_section_two{
+            grid-template-columns: auto auto;
+        }
+
+
+        }
 
    /*mobile*/ 
     @media (max-width: 540px) { 
 
-
+        .book_us_specs_section_two{
+            grid-template-columns: auto;
+        }
    
     }
     @media (max-width: 425px) { 
