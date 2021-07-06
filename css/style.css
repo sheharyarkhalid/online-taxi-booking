@@ -473,6 +473,7 @@ text-align: center;
     .single_service h4{
         margin-bottom: 10px;
         color: #54b3d7;
+        font-size: 16px;
         
     }
 
@@ -545,6 +546,7 @@ text-decoration: none;
     font-size: 27px;
     color: #45423c;
     margin-bottom: 30px;
+    text-align: center;
 }
 .our_experience{
     display: flex;
@@ -1143,7 +1145,7 @@ to {
 }
 }
 
-@media all and (max-width: 300px) {
+/* @media all and (max-width: 300px) {
 body {
     font-size: 14px;
 }
@@ -1158,7 +1160,7 @@ body {
     line-height: 25px;
 }
 
-}
+} */
 
 /* end */
 
@@ -1175,7 +1177,7 @@ footer h1{
     text-align: center;
     color: #fff;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 footer a{
     float: left;
@@ -1183,7 +1185,11 @@ footer a{
     text-align: center;
     color: #fff;
     text-decoration: none;
-    font-size: 40px;   
+    font-size: 30px;   
+}
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
 /*RESPONSIVE*/
@@ -1268,7 +1274,12 @@ footer a{
         .experience {
           margin-bottom: 15px;
         }
-
+        .testim .arrow.left {
+            left: 55px;
+        }
+        .testim .arrow.right {
+            right: 42px;
+        }
         }
 
    /*mobile*/ 
@@ -1293,10 +1304,26 @@ footer a{
         .experience {
           margin-bottom: 15px;
         }
+        .testim .arrow.right {
+            right: 25px;
+        }
+        .testim .arrow.left {
+            left: 35px;
+        }
     }
     @media (max-width: 425px) { 
-
-
+        .testim .arrow.left {
+            left: 14px;
+        }
+        .testim .arrow.right {
+            right: 14px;
+        }
+        footer h1 {
+            font-size: 18px;
+        }
+        footer a {
+            font-size: 18px;
+        }
    
     }
     @media (max-width: 325px) { 
