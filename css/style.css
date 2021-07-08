@@ -316,6 +316,30 @@ justify-content: center;
  cursor: pointer;
 font-size: 20px;
 }
+.flight_departure_date{
+display:block ;
+}
+.departure_date{
+    display:none;
+    }
+.flight_Arival_date{
+    display: none;
+}
+.Arival_date{
+display: block;
+}
+.departure_airport{
+display: block;
+}
+.departure{
+display: none;
+}
+.Arival_airport{
+display: none;
+}
+.arival{
+    display: block;
+}
 .booking_detail form .booking_info .booking_fields{
     position: relative;
 }

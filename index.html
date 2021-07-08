@@ -79,18 +79,36 @@
             <form id="order_taxi_form">
                 <div class="booking_info">
                     <div class="interchange_arrow"><i class="fas fa-expand-arrows-alt"></i></div>
-                 <div class="booking_fields"> 
+                 <div class="booking_fields departure_airport"> 
                     <i class="fas fa-map-marker-alt"></i>    
                 <input type="location" placeholder="Departure Airport">
                   </div>
-                  <div class="booking_fields"> 
+                  <div class="booking_fields departure_airport"> 
                     <i class="fas fa-map-marker-alt"></i>
                 <input type="location" placeholder="pickup Location">
                   </div>
-                  <div class="booking_fields"> 
+
+
+                  <div class="booking_fields Arival_airport"> 
+                    <i class="fas fa-map-marker-alt"></i>    
+                <input type="location" placeholder="Arival Airport">
+                  </div>
+                  <div class="booking_fields Arival_airport"> 
+                    <i class="fas fa-map-marker-alt"></i>
+                <input type="location" placeholder="Going Location">
+                  </div>
+
+                  
+                  <div class="booking_fields flight_departure_date"> 
                     <i class="far fa-calendar-minus" id="cancle"></i>
                 <input type="text" placeholder="Flight Departure" onfocus="(this.type='date')" onblur="(this.type='text')">
                   </div>
+
+                  <div class="booking_fields flight_Arival_date"> 
+                    <i class="far fa-calendar-minus" id="cancle"></i>
+                <input type="text" placeholder="Flight Arival" onfocus="(this.type='date')" onblur="(this.type='text')">
+                  </div>
+
                 <div class="booking_fields">
                     <i class="far fa-calendar-minus" id="cancle"></i>
                 <input type="text" placeholder="Add A Return" onfocus="(this.type='date')" onblur="(this.type='text')">

@@ -3,7 +3,20 @@ $('.open_close_nav').click(function(){
     $('.responsive_nav_bar').toggleClass('responsive_bar');
     });
     
-    
+    $('.interchange_arrow').click(function(){
+
+        $('.Arival_airport').toggleClass('arival');
+
+        $('.departure_airport').toggleClass('departure');
+
+        $('.flight_departure_date').toggleClass('departure_date');
+
+        $('.flight_Arival_date').toggleClass('Arival_date');
+        
+        });
+           
+
+
     // vars
     'use strict'
     var	testim = document.getElementById("testim"),
