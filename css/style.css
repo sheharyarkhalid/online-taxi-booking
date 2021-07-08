@@ -295,6 +295,26 @@ display: grid;
 grid-template-columns: auto auto;
 gap:20px 20px;
 margin-bottom: 30px;
+position: relative;
+}
+.interchange_arrow{
+    position:absolute;
+   z-index: 999;
+   right: 48.4%;
+top: 0%;
+}
+.interchange_arrow i{
+    width: 35px;
+    height: 35px;
+    color: #09afee;
+border: 1px solid #09afee;
+border-radius: 50px 50px 50px 50px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+ cursor: pointer;
+font-size: 20px;
 }
 .booking_detail form .booking_info .booking_fields{
     position: relative;
@@ -327,12 +347,13 @@ margin-bottom: 30px;
 .booking_detail form .booking_info .booking_fields input::placeholder{
     color: #3e4958;
 }
-.booking_detail form .booking_info .booking_fields select{
+
+.booking_detail form .booking_info .booking_fields .quantites{
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
     line-height: 1.45em;
-    padding: 15px 30px 14px 50px;
+    padding: 15px 20px 14px 11px;
     background-color: #f8f9f9;
     color: #3e4958;
     border-style: solid;
@@ -340,14 +361,49 @@ margin-bottom: 30px;
     border-color: #dfe0e2;
     width: 100%;
    cursor: pointer;
+   display: flex;
+   align-items:center ;
+  position: relative;
 }
-.booking_btn{
+.quantites h5{
+ padding: 0px 10px;
+ font-size: 15px;
+ margin: 0px;
+}
+.quantites span{
+    padding: 0px 10px;
+}
+.quantites i{
+    position: unset !important;
+}
+.quantites_box{
+position: absolute;
+top: 112%;
+background: #ece8e8;
+width: 100%;
+left: 0px;
+padding: 20px 20px;
+}
+.children h3{
+    margin: 0px;
+    font-size: 21px;
+    line-height: 18px;
+}
+.single_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+/* .booking_btn{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-}
-.booking_btn button{
+} */
+.booking_fields button{
     background-color: #09afee;
 color: #ffffff;
 font-size: 18px;
@@ -358,6 +414,7 @@ letter-spacing: 0px;
 border: none;
 padding: 13px 24px;
 cursor: pointer;
+width: 100%;
 }
 
 .why_book_us{
@@ -1164,6 +1221,40 @@ body {
 
 /* end */
 
+.popular_airport_section{
+float: left;
+width: 100%;
+padding: 40px 10px;
+background-color: #f7f7f7;
+}
+.popular_airport_section h2{
+    color: #45423c;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+} 
+.popular_airport{
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 0px 20px; 
+  grid-template-areas: 
+    ". . . ."; 
+}
+.airport_list ul{
+    display: flex;
+    flex-direction: column;
+}
+.airport_list ul li{
+list-style: none;
+padding-bottom:15px;
+}
+.airport_list ul li a{
+color:#09afee;
+}
 footer{
 
 float: left;
@@ -1220,6 +1311,9 @@ footer a:hover{
         }
         .offer_service h2{
             font-size: 20px;
+        }
+        .interchange_arrow {
+            right: 48.1%;
         }
         
     }
@@ -1280,11 +1374,24 @@ footer a:hover{
         .testim .arrow.right {
             right: 42px;
         }
+
+        .popular_airport {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 0px 20px;
+            grid-template-areas: ". .";
+        }
+        .interchange_arrow {
+            top: 12%;
+          }
         }
 
    /*mobile*/ 
     @media (max-width: 540px) { 
 
+        .booking_detail form .booking_info {
+            justify-content: center;
+        }
         .book_us_specs_section_two{
             grid-template-columns: auto;
         }
@@ -1309,6 +1416,11 @@ footer a:hover{
         }
         .testim .arrow.left {
             left: 35px;
+        }
+    
+        .popular_airport {
+            grid-template-columns: 1fr;
+            grid-template-areas: ".";
         }
     }
     @media (max-width: 425px) { 
