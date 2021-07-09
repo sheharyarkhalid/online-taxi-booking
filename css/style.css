@@ -288,12 +288,15 @@ color: #ffffff;
     float: left;
     width: 100%;
     background-color: #ffffff;
-    padding: 30px 30px;
+    padding: 30px 15px;
 }
 .booking_detail form .booking_info{
-display: grid;
-grid-template-columns: auto auto;
-gap:20px 20px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      ". ."; 
 margin-bottom: 30px;
 position: relative;
 }
@@ -303,7 +306,7 @@ position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 0px 20px;
+    gap: 20px 20px;
     grid-template-areas: ". .";
 }
 .booking_detail form .change_banner_layout .booking_fields{
@@ -311,7 +314,7 @@ position: relative;
 }
 .booking_detail form .change_banner_layout .booking_fields i{
     position: absolute;
-    top: 21px;
+    top: 18px;
     left: 15px;
     font-size: 20px;
     color: #09afee;
@@ -321,10 +324,9 @@ position: relative;
     transform: rotate(-26deg);
 }
 .booking_detail form .change_banner_layout .booking_fields input{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    line-height: 1.45em;
     padding: 15px 30px 14px 50px;
     background-color: #f8f9f9;
     color: #3e4958;
@@ -382,10 +384,11 @@ display: none;
 }
 .booking_detail form .booking_info .booking_fields{
     position: relative;
+
 }
 .booking_detail form .booking_info .booking_fields i{
     position: absolute;
-    top: 21px;
+    top: 18px;
     left: 15px;
     font-size: 20px;
     color: #09afee;
@@ -395,10 +398,9 @@ display: none;
     transform: rotate(-26deg);
 }
 .booking_detail form .booking_info .booking_fields input{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    line-height: 1.45em;
     padding: 15px 30px 14px 50px;
     background-color: #f8f9f9;
     color: #3e4958;
@@ -413,10 +415,9 @@ display: none;
 }
 
 .booking_detail form .booking_info .booking_fields .quantites{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    line-height: 1.45em;
     padding: 15px 4px 14px 50px;
     background-color: #f8f9f9;
     color: #3e4958;
@@ -489,10 +490,9 @@ cursor: pointer;
 width: 100%; */
 color: #ffffff;
 background-color: #09afee;
-font-size: 20px;
+font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    line-height: 1.45em;
     padding: 15px 55px 14px 50px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
@@ -1424,9 +1424,12 @@ footer a:hover{
             font-size: 18px;
         }
         .booking_detail form .booking_info{
-         
-            grid-template-columns: auto;
+        
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+      "."; 
          }
+         
     
          .why_book_us .books_us_detali {
           
