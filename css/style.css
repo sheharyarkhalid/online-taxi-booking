@@ -427,6 +427,7 @@ display: none;
     width: 100%;
     outline: none;
   position: relative;
+  cursor: pointer;
 }
 .quantites h5{
 
@@ -465,7 +466,7 @@ z-index: 99;
 position: unset !important;
 }
 
-.passerger_quantities{
+.passenger_quantities{
 display: block;
 }
 

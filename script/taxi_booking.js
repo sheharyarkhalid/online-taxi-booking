@@ -15,7 +15,10 @@ $('.open_close_nav').click(function(){
         
         });
            
+        $('.quantites').click(function(){
 
+            $('.quantites_box').toggleClass('passenger_quantities');
+            });
 
     // vars
     'use strict'
