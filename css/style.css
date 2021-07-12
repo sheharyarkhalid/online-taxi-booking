@@ -287,28 +287,32 @@ color: #ffffff;
 .booking_detail{
     float: left;
     width: 100%;
-    background-color: #ffffff;
-    padding: 30px 15px;
+    background-color: #ffda47;
+    padding: 15px 10px;
+    border-radius: 4px;
 }
 .booking_detail form .booking_info{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
-    gap: 20px 20px; 
+    gap: 10px 10px; 
     grid-template-areas: 
       ". ."; 
-margin-bottom: 30px;
 position: relative;
 }
+.banner_booking_first_child{
+    margin-bottom:10px ;
+}
 .change_banner_layout{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px 20px;
+    gap: 10px 10px;
     grid-template-areas: ". .";
 }
+
 .booking_detail form .change_banner_layout .booking_fields{
     position: relative;
 }
@@ -327,14 +331,15 @@ position: relative;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    padding: 15px 30px 14px 50px;
-    background-color: #f8f9f9;
+    padding: 15px 0px 14px 41px;
+    background-color: #ffff;
     color: #3e4958;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #dfe0e2;
+    border-color: #ffffff;
     width: 100%;
     outline: none;
+     border-radius: 4px;
 }
 .booking_detail form .change_banner_layout .booking_fields input::placeholder{
     color: #3e4958;
@@ -401,14 +406,15 @@ display: none;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    padding: 15px 30px 14px 50px;
-    background-color: #f8f9f9;
+    padding: 15px 0px 14px 41px;
+    background-color: #ffffff;
     color: #3e4958;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #dfe0e2;
+    border-color: #ffffff;
     width: 100%;
     outline: none;
+    border-radius: 4px;
 }
 .booking_detail form .booking_info .booking_fields input::placeholder{
     color: #3e4958;
@@ -418,16 +424,17 @@ display: none;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    padding: 15px 4px 14px 50px;
-    background-color: #f8f9f9;
+    padding: 15px 0px 14px 41px;
+    background-color: #ffffff;
     color: #3e4958;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #dfe0e2;
+    border-color: #ffffff;
     width: 100%;
     outline: none;
   position: relative;
   cursor: pointer;
+  border-radius: 4px;
 }
 .quantites h5{
 
@@ -491,15 +498,16 @@ cursor: pointer;
 width: 100%; */
 color: #ffffff;
 background-color: #09afee;
-font-size: 15px;
+font-size: 22px;
     font-weight: normal;
     font-style: normal;
-    padding: 15px 55px 14px 50px;
+    padding: 12px 0px 9px 0px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #dfe0e2;
+    border:none;
     width: 100%;
     outline: none;
+    border-radius: 4px;
 }
 
 .why_book_us{
@@ -541,10 +549,11 @@ padding: 10px 0px;
 }
 
 .why_book_us .books_us_detali .book_us .book_us_specs_section_one span small{
-    font-size: 14px;
+    font-size: 12px;
     color: #45423c;
     padding: 0px 10px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .book_us_specs_section_two{
 /* display:flex;
@@ -565,7 +574,7 @@ align-content: center;
     margin-bottom: 10px;
 }
 .book_us_specs_section_two span p{
-    font-size: 17px;
+    font-size: 14px;
 }
 .book_us_specs_section_two span i{
 color: #09afee;
@@ -591,12 +600,11 @@ margin-bottom: 10px;
 }
 .fleet_services{
 display: grid;
-grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: ". . . . . .";
+grid-template-rows: auto;
+gap: 40px 45px;
 text-align: center;
-}
-.single_service {
-    padding: 0px 15px;
 }
 
 .single_service figure{
@@ -632,17 +640,18 @@ text-align: center;
         align-items: center;
         font-size: 27px;
         color: #45423c;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .our_services{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    
-    text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 60px 20px;
+        grid-template-areas: ". . . .";
+        text-align: center;
+        margin-bottom: 30px;
     }
-    .offer_service {
-        padding: 25px 15px;
-    }
+
     .offer_service i{
         font-size: 50px;
       margin-bottom: 25px;
@@ -653,6 +662,11 @@ float: left;
 width: 100%;    
 padding: 0px 10px;
 margin-bottom: 30px;
+}
+.our_services_section .our_services .offer_service h2{
+    font-size: 27px;
+    color: #45423c;
+    margin-bottom:0px;
 }
 .order_btn_section .order_btn{
     display: flex;
@@ -1389,7 +1403,8 @@ footer a:hover{
             grid-template-columns: auto auto;
         }
         .fleet_services {
-            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: ". . .";
         }
         .single_service figure img {
             height:150px;
@@ -1401,6 +1416,10 @@ footer a:hover{
             right: 48.1%;
         }
         
+        .our_services_section .our_services .offer_service h2{
+            font-size: 22px;
+        } 
+    
     }
 
 /*mobile rotation*/
@@ -1441,15 +1460,22 @@ footer a:hover{
             grid-template-columns: auto auto;
         }
         .fleet_services {
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: ". .";
         }
         .single_service figure img {
-            height:150px;
+            
+                height: 100px;
+                width: 50%;
+            
         }
-        .our_services {
-            display: grid;
-            grid-template-columns: 50% 50%;
+        .our_services{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: ". .";
         }
+        .our_services_section .our_services .offer_service h2{
+            font-size: 20px;
+        } 
         .our_experience {
             flex-direction: column;
         }
@@ -1470,28 +1496,48 @@ footer a:hover{
             grid-template-areas: ". .";
         }
         .interchange_arrow {
-            top: 38%;
+            top: 35%;
+            right: 8.4%;
         }
         }
 
    /*mobile*/ 
     @media (max-width: 540px) { 
 
-       
+        .banner_data .banner_text h1 {
+            font-size: 30px;
+        }
+        .banner_data .banner_text h2 {
+            font-size: 32px;
+        }
+        .banner_data .banner_text h3 {
+            font-size: 16px;
+        }
         .book_us_specs_section_two{
             grid-template-columns: auto;
         }
+        .banner_booking_first_child {
+            margin-bottom: 10px;
+        }
+        .change_banner_layout {
+            margin-bottom: 10px;
+        }
         .fleet_services {
-            grid-template-columns: 100%;
+            grid-template-columns: 1fr;
+            grid-template-areas: ".";
         }
         .single_service figure img {
-            height:200px;
+            height: 140px;
+            width: 50%;
         }
-        .our_services {
-            display: grid;
-            grid-template-columns: 100%;
+        .our_services{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: ". .";
         }
-        .our_experience {
+        .our_services_section .our_services .offer_service h2{
+            font-size: 16px;
+        } 
+            .our_experience {
             flex-direction: column;
         }
         .experience {
@@ -1508,6 +1554,11 @@ footer a:hover{
             grid-template-columns: 1fr;
             grid-template-areas: ".";
         }
+        .interchange_arrow {
+            top: 35%;
+            right: 8.4%;
+        }
+       
     }
     @media (max-width: 425px) { 
         .testim .arrow.left {
@@ -1526,6 +1577,13 @@ footer a:hover{
     }
     @media (max-width: 325px) { 
 
-    
-    
+        .banner_data .banner_text h1 {
+            font-size: 25px;
+        }
+        .banner_data .banner_text h2 {
+            font-size: 27px;
+        }
+        .banner_data .banner_text h3 {
+            font-size: 14px;
+        }
     }
