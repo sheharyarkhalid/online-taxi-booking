@@ -510,6 +510,35 @@ font-size: 22px;
     border-radius: 4px;
 }
 
+.google_review_section{
+float: left;
+width: 100%;
+margin-bottom: 50px;
+padding: 0px 10px;
+}
+.google_review_section .google_review{
+display: flex;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.google_review_section .google_review figure{
+    margin-bottom: 15px;
+}
+.google_review_section .google_review figure img{
+    width: 150px;
+}
+.google_review_section .google_review .review_start{
+    display: flex;
+    justify-content: center;
+}
+.google_review_section .google_review .review_start i{
+color: yellow;
+padding: 0px 8px;
+font-size: 23px;
+}
+
 .why_book_us{
     float: left;
     width: 100%;
