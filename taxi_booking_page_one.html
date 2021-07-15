@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/taxi_booking_page_one.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
+    </head>
+<body>
+
+    <header>
+        <div class="custom_container">
+            <div class="header_bar">
+                <div class="logo">
+                <a href="index.html">Pick Up</a>
+                </div>
+                <button class="nav_btn open_close_nav" type="button">
+                      <i class="fas fa-bars"></i>
+                  </button>
+                <div class="nav_bar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="call_us">
+                    <span><i class="fas fa-phone-volume"></i></span>
+                    <small>Call Now:</small>
+                    <a href="#">823</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+<section class="responsive_nav_bar">
+    <div class="cancle_nav"><a class="open_close_nav"><i class="fas fa-times"></i></a></div>
+    <div class="responsive_nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact_us.html">Contact us</a></li>
+            <li><a href="help.html">Help Center</a></li>
+        </ul>
+    </div>
+    <div class="responsive_call_us">
+        <span><i class="fas fa-phone-volume"></i></span>
+        <small>Call Now:</small>
+        <a href="#">823</a>
+    </div>
+</section>
+
+<section class="taxi_booking_page_one_body">
+<section class="page_one_vehical_selection">
+    <div class="custom_container">
+        <h2>Select Vehicle</h2>
+    <div class="page_one_vehical">
+      <div class="page_one_section">
+        <form>
+            <div class="airport_option">
+                <div class="airport_direction">
+                <input type="radio" name="airport_ditrection">
+                <label>From the Airport</label>
+                </div>
+                <div class="airport_direction">
+                    <input type="radio" name="airport_ditrection">
+                    <label>To the Airport</label>
+                    </div>
+            </div>
+
+            <div class="airport_selection_fileds">
+                <div class="airport_fileds">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <div class="air_input">
+                        <span>Departure Airport</span>
+                    <input type="location" placeholder="Departure Airport">
+                    </div>               
+                 </div>
+
+                 <div class="airport_fileds airport_fileds_border">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <div class="air_input">
+                        <span>pickup Location</span>
+                    <input type="location" placeholder="pickup Location">
+                    </div>               
+                 </div>
+
+                 <div class="airport_fileds">
+                    <span><i class="far fa-calendar-minus"></i></span>
+                    <div class="air_input">
+                        <span>Flight Departure</span>
+                    <input type="date" placeholder="Flight Departure">
+                    </div>               
+                 </div>
+
+                 <div class="airport_fileds ">
+                    <span><i class="far fa-calendar-minus"></i></span>
+                    <div class="air_input">
+                        <span>Add Return</span>
+                    <input type="date" placeholder="Add Return">
+                    </div>               
+                 </div>
+
+                 <div class="airport_fileds_checkbox airport_fileds_border">
+                    <input type="checkbox" >
+                    <label>Only one way</label>              
+                 </div>
+
+                 <div class="airport_fileds">
+                    <span><i class="fas fa-user"></i></span>
+                    <div class="air_input">
+                        <span>Passengers</span>
+                    <div class="page_one_Passengers">
+                        <h5>
+                            <span>0</span>
+                            <span>children</span>
+                        </h5>
+                        <h5>
+                            <span>0</span>
+                            <span>Adult</span>
+                        </h5>
+                    </div>
+                    </div>               
+                 </div>
+
+                 <div class="booking_page_one_btn">
+                     <button type="submit">Order Taxi</button>
+                 </div>
+
+            </div>
+        </form>
+        
+        <a class="booking_page_one_hep" href="#">
+            <div class="booking_page_one_hepcenter">
+               <span><i class="fas fa-info-circle"></i></span>
+               <span><h3>Help center</h3><small>Frequently Asked Questions</small></span>
+           </div>
+         </a>
+
+         <div class="booking_page_one_route_detail">
+             <h2>Routing Detail</h2>
+             <div class="route_detail"><span>Mallorca airport (PMI)</span><span>to</span><span>Alcúdia</span></div>
+             <div class="journy_distance">
+                 <h3>Journey distance: </h3>
+                 <span>61 km</span> 
+                </div>
+                <div class="estimated_journy_time">
+                    <h3>Estimated journey time:</h3>
+                    <span>61 min</span> 
+                   </div>
+         </div>
+
+         <div class="booking_page_one_price_detail">
+            <h2>Price Detail</h2>
+            <div class="booking_page_one_total_price total_price_border">
+                <h3>Select Vehicle</h3>
+                <span>$100</span> 
+               </div>
+               <div class="booking_page_one_total_price">
+                   <h3>Total Price</h3>
+                   <span>$100</span> 
+                  </div>
+        </div>
+
+      </div>
+      <div class="page_one_section_two">
+        <form>
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/standard.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Standard</h1>
+                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <button>Select</button>
+                </div>
+            </div>   
+
+        </div>  
+
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/standard.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Standard</h1>
+                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <button>Select</button>
+                </div>
+            </div>   
+
+        </div>  
+
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/standard.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Standard</h1>
+                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <button>Select</button>
+                </div>
+            </div>   
+
+        </div>  
+
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/standard.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Standard</h1>
+                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <button>Select</button>
+                </div>
+            </div>   
+
+        </div>  
+
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/standard.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Standard</h1>
+                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <button>Select</button>
+                </div>
+            </div>   
+
+        </div>  
+       </form>
+
+       <div class="page_one_continous_btn">
+           <a href="taxi_booking_page_two.html">Enter Extra Detail</a>
+       </div>
+
+    </div>
+  
+
+    </div>
+
+    </div>
+</section>
+
+</section>
+
+<footer>
+    <div class="custom_container">
+        <h1>We are ready to take your call 24 hours, 7 days!</h1>
+        <a href="#"><strong>Call Now: +1 217 636 4160</strong></a>
+    </div>
+    
+    </footer>
+    <script src="script/taxi_booking.js"></script>
+    
+    
+    </body>
+    </html>
