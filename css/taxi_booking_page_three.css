@@ -36,6 +36,7 @@ margin-bottom: 10px;
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+   width: 100%;
 }
 .page_three_payment_method span{
     border:1px solid gray;
@@ -55,13 +56,14 @@ color: #0070C0;
 .page_three_continuous_btn{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .page_three_continuous_btn .back a{
     background-color: #147b22;
     text-decoration: none;
     color: #fff;
     font-size: 19px;
-    padding: 12px 20px;
+    padding: 9px 50px;
     border-radius: 50px;
     transition: 0.3s ease-in-out;
     float: left;
@@ -76,7 +78,7 @@ color: #0070C0;
     text-decoration: none;
     color: #fff;
     font-size: 19px;
-    padding: 12px 20px;
+    padding: 9px 50px;
     border-radius: 50px;
     transition: 0.3s ease-in-out;
     float: left;
@@ -87,7 +89,36 @@ color: #0070C0;
     border:2px solid #0070C0;
  }
 
+ #laptop_booking_summary{
+    display: block;
+  }
+  #mobile_booking_summary{
+      display:none;
+   }
 
+   .booking_page_one_price_detail{
+      border: 1px solid gray;
+      background-color: #ffff;
+      padding: 20px 15px;
+      margin-bottom: 20px;
+      float: left;
+      width: 100%;
+  }
+  .booking_page_one_price_detail h2{
+      margin-bottom: 15px;
+  justify-content: left;
+  display: flex;
+  
+  }
+  .booking_page_one_total_price{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  }
+  .booking_page_one_total_price h3{
+      color: #252525;
+      font-weight: normal;
+  }
  
      /* Responsive */
     /*Tablet*/
@@ -119,6 +150,13 @@ color: #0070C0;
             .page_one_vehical_selection .page_one_vehical {
                 grid-template-columns:1fr;
             }
+
+            #laptop_booking_summary{
+                display: none;
+              }
+              #mobile_booking_summary{
+                  display:block;
+               }  
         }
         @media (max-width: 425px) { 
            

@@ -27,6 +27,49 @@ margin-top:50px;
   grid-template-areas: 
     ". ."; 
 }
+#mobile_route_deail{
+display: none;
+}
+.mobile_route_deail{
+float: left;
+width: 100%;
+background-color:#ffcd48 ;
+padding: 10px 5px;
+margin-bottom: 10px;
+}
+.mobile_route_history{
+background-color: #fff;
+border-radius: 4px;
+padding: 10px 5px;
+
+}
+.mobile_route_history .location_history{
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
+
+.mobile_route_history .location_history span i{
+    padding: 5px;
+    color: #09afee;
+}
+.timing_history{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.timing_history .date_time_history i{
+    color: #09afee;
+    
+}
+.timing_history .date_time_history span{
+    padding: 0px 2px;
+}
+.passenger span i{
+    color: #09afee;
+    padding: 0px 5px;
+}
+
+
 .page_one_vehical_selection .page_one_vehical .page_one_section form{
     float: left;
     width: 100%;
@@ -156,6 +199,8 @@ grid-template-areas:
     background-color: #ffff;
     padding: 20px 15px;
     margin-bottom: 20px;
+    float: left;
+    width: 100%;
 }
 .booking_page_one_route_detail > h2{
  margin-bottom: 15px;   
@@ -166,6 +211,9 @@ display: flex;
     margin-bottom: 10px;
     border-bottom: 1px solid #2525;
     padding-bottom: 15px;
+}
+.booking_page_one_route_detail .route_detail span{
+    padding: 0px 2px;
 }
 .journy_distance{
 margin-bottom: 15px;
@@ -215,19 +263,22 @@ border-left: 1px dotted gray;
 .booking_page_one_car_price_detail strong{
     font-weight:normal ;
     padding-bottom: 10px;
+    font-size: 14px;
 }
 .booking_page_one_car_price_detail small{
     padding-bottom: 10px;
 }
-.booking_page_one_car_price_detail button{
+.booking_page_one_car_price_detail a{
     color: #fff;
 border-bottom: 3px solid #147b22;
 background-color: #0cc024;
 padding: 10px;
 border:none;
 width: 100%;
-font-size: 20px;
+font-size: 14px;
 font-weight: 500;
+text-align: center;
+text-decoration: none;
 }
 .booking_page_one_single_car_detail{
     display: grid; 
@@ -263,27 +314,7 @@ display: flex;
     padding: 2px;
     font-size: 18px;
 }
-.booking_page_one_price_detail{
-    border: 1px solid gray;
-    background-color: #ffff;
-    padding: 20px 15px;
-    margin-bottom: 20px;
-}
-.booking_page_one_price_detail h2{
-    margin-bottom: 15px;
-justify-content: left;
-display: flex;
 
-}
-.booking_page_one_total_price{
-display: flex;
-justify-content: space-between;
-margin-bottom: 15px;
-}
-.booking_page_one_total_price h3{
-    color: #252525;
-    font-weight: normal;
-}
 .total_price_border{
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
@@ -293,7 +324,7 @@ background-color: #0070C0;
 text-decoration: none;
 color: #fff;
 font-size: 19px;
-padding: 12px 20px;
+padding: 9px 50px;
 border-radius: 50px;
 transition: 0.3s ease-in-out;
 float: left;
@@ -304,7 +335,17 @@ color: #0070C0;
 border:2px solid #0070C0;
 }
 
+footer{
+    display: none !important;
+}
 
+.quantites_box {
+    top: 51px !important;
+    display: none;
+}
+.airport_fileds {
+    position: relative;
+}
 /*RESPONSIVE*/
 
 /*Tablet*/
@@ -355,4 +396,19 @@ border:2px solid #0070C0;
         grid-template-areas: ".";
     }
 
+    #mobile_route_deail{
+       display: block; 
+    }
+    .page_one_vehical_selection .page_one_vehical .page_one_section form {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .timing_history {
+        flex-direction: column;
+    }
+    .date_time_history{
+        padding-bottom: 10px;
+    }
 }

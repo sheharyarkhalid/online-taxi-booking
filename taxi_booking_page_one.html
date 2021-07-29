@@ -14,6 +14,7 @@
    
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    
+  
 
     </head>
 <body>
@@ -35,6 +36,7 @@
                         <li><a href="career.html">Career</a></li>
                         <li><a href="contact_us.html">Contact us</a></li>
                         <li><a href="help.html">Help Center</a></li>
+                        <li><a href="mybooking.html">My Booking</a></li>
                     </ul>
                 </div>
                 <div class="call_us">
@@ -56,6 +58,7 @@
             <li><a href="career.html">Career</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
             <li><a href="help.html">Help Center</a></li>
+            <li><a href="mybooking.html">My Booking</a></li>
         </ul>
     </div>
     <div class="responsive_call_us">
@@ -71,23 +74,32 @@
         <h2>Select Vehicle</h2>
     <div class="page_one_vehical">
       <div class="page_one_section">
-        <form>
-            <div class="airport_option">
-                <div class="airport_direction">
-                <input type="radio" name="airport_ditrection">
-                <label>From the Airport</label>
+
+        <div class="mobile_route_deail" id="mobile_route_deail">
+            <div class="mobile_route_history">
+                <div class="location_history">
+                    <span>Mallorca airport (PMI)</span><span><i class="fas fa-exchange-alt"></i></span><span>Alcúdia</span>
                 </div>
-                <div class="airport_direction">
-                    <input type="radio" name="airport_ditrection">
-                    <label>To the Airport</label>
+                <div class="timing_history">
+                    <div class="date_time_history">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Jul,30 at 12:00</span><span>-</span><span>Jul,30 at 12:00</span>
                     </div>
+                    <div class="passenger">
+                        <span><i class="fas fa-user-alt"></i><small>2</small></span>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <form>
+            
 
             <div class="airport_selection_fileds">
                 <div class="airport_fileds">
                     <span><i class="fas fa-map-marker-alt"></i></span>
                     <div class="air_input">
-                        <span>Departure Airport</span>
+                        <span>Where From?</span>
                     <input type="location" placeholder="Departure Airport">
                     </div>               
                  </div>
@@ -95,7 +107,7 @@
                  <div class="airport_fileds airport_fileds_border">
                     <span><i class="fas fa-map-marker-alt"></i></span>
                     <div class="air_input">
-                        <span>pickup Location</span>
+                        <span>Where To?</span>
                     <input type="location" placeholder="pickup Location">
                     </div>               
                  </div>
@@ -103,7 +115,7 @@
                  <div class="airport_fileds">
                     <span><i class="far fa-calendar-minus"></i></span>
                     <div class="air_input">
-                        <span>Flight Departure</span>
+                        <span>Pickup Date</span>
                     <input type="date" placeholder="Flight Departure">
                     </div>               
                  </div>
@@ -111,9 +123,28 @@
                  <div class="airport_fileds ">
                     <span><i class="far fa-calendar-minus"></i></span>
                     <div class="air_input">
-                        <span>Add Return</span>
+                        <span>Return Date</span>
                     <input type="date" placeholder="Add Return">
                     </div>               
+                    
+                 </div>
+
+                 <div class="airport_fileds ">
+                    <span><i class="far fa-calendar-minus"></i></span>
+                    <div class="air_input">
+                        <span>Pickup Time</span>
+                    <input type="time"  placeholder="Time">
+                    </div>               
+                    
+                 </div>
+
+                 <div class="airport_fileds ">
+                    <span><i class="far fa-calendar-minus"></i></span>
+                    <div class="air_input">
+                        <span>Return Time</span>
+                    <input type="time"  placeholder="Time">
+                    </div>               
+                    
                  </div>
 
                  <div class="airport_fileds_checkbox airport_fileds_border">
@@ -135,24 +166,48 @@
                             <span>Adult</span>
                         </h5>
                     </div>
-                    </div>               
+                    </div>  
+                    <div class="quantites_box passenger_quantities">
+                        <div class="single_box">
+                          <div class="children"><h3>Adults</h3><small>12+ year</small></div>  
+                          <div class="icon_section">  
+                        <i class="fas fa-minus-circle"></i>
+                        <span>2</span>
+                        <i class="fas fa-plus-circle"></i>
+                        </div>
+                        </div>
+
+                        <div class="single_box">
+                            <div class="children"><h3>children</h3><small>2-12 year</small></div>  
+                            <div class="icon_section">  
+                          <i class="fas fa-minus-circle"></i>
+                          <span>2</span>
+                          <i class="fas fa-plus-circle"></i>
+                          </div>
+                          </div>
+
+                          <div class="single_box">
+                            <div class="children"><h3>Infants</h3><small>under 2 year</small></div>  
+                            <div class="icon_section">  
+                          <i class="fas fa-minus-circle"></i>
+                          <span>2</span>
+                          <i class="fas fa-plus-circle"></i>
+                          </div>
+                          </div>
+                        
+                    </div>             
                  </div>
 
                  <div class="booking_page_one_btn">
-                     <button type="submit">Order Taxi</button>
+                     <button type="submit">update search</button>
                  </div>
 
             </div>
         </form>
         
-        <a class="booking_page_one_hep" href="#">
-            <div class="booking_page_one_hepcenter">
-               <span><i class="fas fa-info-circle"></i></span>
-               <span><h3>Help center</h3><small>Frequently Asked Questions</small></span>
-           </div>
-         </a>
+        
 
-         <div class="booking_page_one_route_detail">
+         <!-- <div class="booking_page_one_route_detail">
              <h2>Routing Detail</h2>
              <div class="route_detail"><span>Mallorca airport (PMI)</span><span>to</span><span>Alcúdia</span></div>
              <div class="journy_distance">
@@ -163,19 +218,9 @@
                     <h3>Estimated journey time:</h3>
                     <span>61 min</span> 
                    </div>
-         </div>
+         </div> -->
 
-         <div class="booking_page_one_price_detail">
-            <h2>Price Detail</h2>
-            <div class="booking_page_one_total_price total_price_border">
-                <h3>Select Vehicle</h3>
-                <span>$100</span> 
-               </div>
-               <div class="booking_page_one_total_price">
-                   <h3>Total Price</h3>
-                   <span>$100</span> 
-                  </div>
-        </div>
+         
 
       </div>
       <div class="page_one_section_two">
@@ -196,11 +241,11 @@
             </div>   
             <div class="booking_page_one_car_detail">
                 <div class="booking_page_one_car_price_detail">
-                <strong>Total Price</strong>
+                <strong>Total One-Way Price</strong>
                 <strong>$100</strong>
                 <small>Free Cancelation</small>
                 <small>No Hidden Charges</small>
-                <button>Select</button>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
                 </div>
             </div>   
 
@@ -212,7 +257,7 @@
                <div class="booking_page_one_single_car_detail">
                    <figure><img src="image/standard.png"></figure>
                    <div class="page_one_single_car_detail">
-                       <h1>Standard</h1>
+                       <h1>Vip & Exec</h1>
                        <span><i class="fas fa-user"></i><small>4 Paks</small></span>
                          <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
                        <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
@@ -222,11 +267,11 @@
             </div>   
             <div class="booking_page_one_car_detail">
                 <div class="booking_page_one_car_price_detail">
-                <strong>Total Price</strong>
+                <strong>Total One-Way Price</strong>
                 <strong>$100</strong>
                 <small>Free Cancelation</small>
                 <small>No Hidden Charges</small>
-                <button>Select</button>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
                 </div>
             </div>   
 
@@ -236,11 +281,11 @@
 
             <div class="booking_page_one_car_detail">
                <div class="booking_page_one_single_car_detail">
-                   <figure><img src="image/standard.png"></figure>
+                   <figure><img src="image/family.png"></figure>
                    <div class="page_one_single_car_detail">
-                       <h1>Standard</h1>
-                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
-                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <h1>Family</h1>
+                       <span><i class="fas fa-user"></i><small>5 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>6 Bags</small></span>
                        <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
                    </div>
                </div>
@@ -248,11 +293,11 @@
             </div>   
             <div class="booking_page_one_car_detail">
                 <div class="booking_page_one_car_price_detail">
-                <strong>Total Price</strong>
+                <strong>Total One-Way Price</strong>
                 <strong>$100</strong>
                 <small>Free Cancelation</small>
                 <small>No Hidden Charges</small>
-                <button>Select</button>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
                 </div>
             </div>   
 
@@ -262,11 +307,11 @@
 
             <div class="booking_page_one_car_detail">
                <div class="booking_page_one_single_car_detail">
-                   <figure><img src="image/standard.png"></figure>
+                   <figure><img src="image/minivan.png"></figure>
                    <div class="page_one_single_car_detail">
-                       <h1>Standard</h1>
-                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
-                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <h1>Minivan</h1>
+                       <span><i class="fas fa-user"></i><small>9 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>9 Bags</small></span>
                        <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
                    </div>
                </div>
@@ -274,11 +319,11 @@
             </div>   
             <div class="booking_page_one_car_detail">
                 <div class="booking_page_one_car_price_detail">
-                <strong>Total Price</strong>
+                <strong>Total One-Way Price</strong>
                 <strong>$100</strong>
                 <small>Free Cancelation</small>
                 <small>No Hidden Charges</small>
-                <button>Select</button>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
                 </div>
             </div>   
 
@@ -288,11 +333,11 @@
 
             <div class="booking_page_one_car_detail">
                <div class="booking_page_one_single_car_detail">
-                   <figure><img src="image/standard.png"></figure>
+                   <figure><img src="image/smallbus.png"></figure>
                    <div class="page_one_single_car_detail">
                        <h1>Standard</h1>
-                       <span><i class="fas fa-user"></i><small>4 Paks</small></span>
-                         <span><i class="fas fa-suitcase-rolling"></i> <small>4 Bags</small></span>
+                       <span><i class="fas fa-user"></i><small>15 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>15 Bags</small></span>
                        <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
                    </div>
                </div>
@@ -300,11 +345,38 @@
             </div>   
             <div class="booking_page_one_car_detail">
                 <div class="booking_page_one_car_price_detail">
-                <strong>Total Price</strong>
+                <strong>Total One-Way Price</strong>
                 <strong>$100</strong>
                 <small>Free Cancelation</small>
                 <small>No Hidden Charges</small>
-                <button>Select</button>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
+                </div>
+            </div>   
+
+        </div>  
+
+
+        <div class="booking_page_one_car_selection">
+
+            <div class="booking_page_one_car_detail">
+               <div class="booking_page_one_single_car_detail">
+                   <figure><img src="image/coash.png"></figure>
+                   <div class="page_one_single_car_detail">
+                       <h1>Coach</h1>
+                       <span><i class="fas fa-user"></i><small>30 Paks</small></span>
+                         <span><i class="fas fa-suitcase-rolling"></i> <small>30 Bags</small></span>
+                       <span><i id="single_car_more" class="fas fa-chevron-down"></i><small>More Info</small></span>  
+                   </div>
+               </div>
+
+            </div>   
+            <div class="booking_page_one_car_detail">
+                <div class="booking_page_one_car_price_detail">
+                <strong>Total One-Way Price</strong>
+                <strong>$100</strong>
+                <small>Free Cancelation</small>
+                <small>No Hidden Charges</small>
+                <a href="taxi_booking_page_two.html">Select This Vehicle</a>
                 </div>
             </div>   
 
@@ -312,7 +384,7 @@
        </form>
 
        <div class="page_one_continous_btn">
-           <a href="taxi_booking_page_two.html">Enter Extra Detail</a>
+           <a href="index.html">Back</a>
        </div>
 
     </div>
@@ -333,7 +405,7 @@
     
     </footer>
     <script src="script/taxi_booking.js"></script>
-    
+ 
     
     </body>
     </html>
