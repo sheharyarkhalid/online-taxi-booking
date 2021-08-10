@@ -346,6 +346,7 @@ justify-content: space-between;
     width: 160px;
     outline: none;
      border-radius: 4px;
+     height: 55px;
 }
 .booking_detail form .change_banner_layout .booking_fields  #time{
    
