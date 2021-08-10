@@ -21,7 +21,6 @@
 
     </head>
 <body>
-
     <header>
         <div class="custom_container">
             <div class="header_bar">
@@ -108,8 +107,39 @@
                   <div class="booking_fields flight_departure_date"> 
                     <i class="far fa-calendar-minus" id="cancle"></i>
                     <div class="time_date_input">
-                <input type="date" placeholder="Flight Departure">
-                <input id="time" type="text" placeholder="Time" onfocus="(this.type='time')" onblur="(this.type='text')">
+                        <style>
+                            .depature_box{
+                                position: relative;
+                            }
+                            .depature_box span{
+                                position: absolute;
+top: 6px;
+left: 44px;
+width: 165px;
+                              font-size: 14px;
+                            } 
+                            .depature_box input{
+                                padding: 22px 0px 0px 41px !important;
+                               width: 100% !important;
+                             }
+
+                            .depature_time_box{
+                                position: relative;
+                            }
+                            .depature_time_box span{
+                                position: absolute;
+                              top: 6px;
+                              left: 0px;
+                              width: 100% !important;
+                              font-size: 14px;
+                            } 
+                            .depature_time_box input{
+                                padding-top: 22px !important;
+                                width: 100% !important;
+                            }
+                        </style>
+               <div class="depature_box"><span>Flight Departure Date</span> <input type="date" placeholder="Flight Departure"></div>
+               <div class="depature_time_box"><span>Time</span> <input id="time" type="time" placeholder="Time"></div>
                     </div>
                   </div>
 
