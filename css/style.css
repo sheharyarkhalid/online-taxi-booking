@@ -337,13 +337,13 @@ justify-content: space-between;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
-    padding: 15px 0px 14px 41px;
+    padding: 22px 0px 0px 41px !important;
     background-color: #ffff;
     color: #3e4958;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: #ffffff;
-    width: 160px;
+    width: 100%;
     outline: none;
      border-radius: 4px;
      height: 55px;
@@ -1600,6 +1600,11 @@ footer a:hover{
             right: 8.4%;
         }
        
+        .change_banner_layout {
+            grid-template-columns: 1fr;
+            grid-template-areas: '.';
+        }
+
     }
     @media (max-width: 470px) { 
 
@@ -1634,5 +1639,18 @@ footer a:hover{
         }
         .banner_data .banner_text h3 {
             font-size: 14px;
+        }
+    }
+
+    @media (max-width: 350px) { 
+    
+        .booking_detail form .change_banner_layout .booking_fields .time_date_input {
+            flex-direction: column;
+        }
+        .depature_time_box span {
+            left: 41px !important;
+        }
+        .booking_detail form .change_banner_layout .booking_fields i {
+            top: 41px;
         }
     }
